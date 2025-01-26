@@ -6,7 +6,7 @@ This repository showcases the projects, assignments, and related documents compl
 An intensive 1.5-month training that provided hands-on experience and expertise across:
 + Agile Development and Scrum Practices:
 o	In-depth understanding of SDLC, Scrum methodologies, and use of tools like Trello.
-*Database Management with MySQL:
++ Database Management with MySQL:
 o	Covered database design, normalization, advanced querying, and CRUD operations.
 *Core Java and Git:
 o	Mastered OOP concepts, exception handling, Java collections, JDBC, and version control with Git.
