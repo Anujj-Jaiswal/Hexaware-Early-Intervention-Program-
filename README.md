@@ -4,7 +4,7 @@ This repository showcases the projects, assignments, and related documents compl
 **Training Modules**
 **1. Foundation Training (September 2nd - October 24th, 2024)**
 An intensive 1.5-month training that provided hands-on experience and expertise across:
-*Agile Development and Scrum Practices:
++ Agile Development and Scrum Practices:
 o	In-depth understanding of SDLC, Scrum methodologies, and use of tools like Trello.
 *Database Management with MySQL:
 o	Covered database design, normalization, advanced querying, and CRUD operations.
