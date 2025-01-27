@@ -1,0 +1,42 @@
+<div class="login-container">
+  <h2 class="login-title">Login to SimplyFly</h2>
+  
+  <form (ngSubmit)="onLogin()" #loginForm="ngForm" class="login-form">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        [(ngModel)]="email" 
+        required 
+        class="form-control" 
+        placeholder="Enter your email" />
+    </div>
+    
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input 
+        type="password" 
+        id="password" 
+        name="password" 
+        [(ngModel)]="password" 
+        required 
+        class="form-control" 
+        placeholder="Enter your password" />
+    </div>
+    
+    <div class="form-group">
+      <button 
+        type="submit" 
+        class="btn btn-primary"
+        [disabled]="!loginForm.form.valid">
+        Login
+      </button>
+    </div>
+    
+    <div *ngIf="loginError" class="error-message">
+      Invalid email or password. Please try again.
+    </div>
+  </form>
+</div>

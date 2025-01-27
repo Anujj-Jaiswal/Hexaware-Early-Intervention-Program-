@@ -1,0 +1,21 @@
+<!-- app.component.html -->
+<div class="app-container">
+  <header>
+    <h1>Cricket Team Management</h1>
+    <nav>
+      <ul>
+        <li><a routerLink="/players" routerLinkActive="active">Players List</a></li>
+        <li><a routerLink="/add-player" routerLinkActive="active">Add Player</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="content">
+    <router-outlet></router-outlet> <!-- This is where routed components will be displayed -->
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Cricket Team Management</p>
+  </footer>
+</div>

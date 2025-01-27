@@ -1,0 +1,40 @@
+<div class="player-list-container">
+  <h2>Player List</h2>
+
+  <!-- Display error message if there are any issues loading players -->
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+  <!-- Display the player list in a table -->
+  <table *ngIf="players.length > 0" class="player-table">
+    <thead>
+      <tr>
+        <th>Player ID</th>
+        <th>Player Name</th>
+        <th>Jersey Number</th>
+        <th>Role</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let player of players">
+        <td>{{ player.playerId }}</td>
+        <td>{{ player.playerName }}</td>
+        <td>{{ player.jerseyNumber }}</td>
+        <td>{{ player.role }}</td>
+        <td>
+          <!-- Edit and Delete buttons -->
+          <button (click)="editPlayer(player.playerId)" class="btn-edit">Edit</button>
+          <button (click)="deletePlayer(player.playerId)" class="btn-delete">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Display message if no players are found -->
+  <div *ngIf="players.length === 0" class="no-players">
+    No players found.
+  </div>
+
+  <!-- Add Player Button -->
+  <button (click)="addPlayer()" class="btn-add">Add Player</button>
+</div>

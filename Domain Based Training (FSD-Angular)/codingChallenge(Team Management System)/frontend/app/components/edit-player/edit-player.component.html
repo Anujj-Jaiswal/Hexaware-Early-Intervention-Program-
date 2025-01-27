@@ -1,0 +1,65 @@
+<div class="edit-player-container">
+  <h2>Edit Player</h2>
+
+  <!-- Display error message if the form is not valid -->
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+  <!-- Display success message if player is updated successfully -->
+  <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+
+  <form (ngSubmit)="onSubmit()" #editPlayerForm="ngForm" class="player-form">
+    <!-- Player Name -->
+    <div class="form-group">
+      <label for="playerName">Player Name</label>
+      <input type="text" id="playerName" [(ngModel)]="player.playerName" name="playerName" required placeholder="Enter player name" />
+    </div>
+
+    <!-- Jersey Number -->
+    <div class="form-group">
+      <label for="jerseyNumber">Jersey Number</label>
+      <input type="number" id="jerseyNumber" [(ngModel)]="player.jerseyNumber" name="jerseyNumber" required placeholder="Enter jersey number" />
+    </div>
+
+    <!-- Role -->
+    <div class="form-group">
+      <label for="role">Role</label>
+      <select id="role" [(ngModel)]="player.role" name="role" required>
+        <option value="Batsman">Batsman</option>
+        <option value="Bowler">Bowler</option>
+        <option value="Keeper">Keeper</option>
+        <option value="All Rounder">All Rounder</option>
+      </select>
+    </div>
+
+    <!-- Total Matches -->
+    <div class="form-group">
+      <label for="totalMatches">Total Matches</label>
+      <input type="number" id="totalMatches" [(ngModel)]="player.totalMatches" name="totalMatches" required placeholder="Enter total matches played" />
+    </div>
+
+    <!-- Team Name -->
+    <div class="form-group">
+      <label for="teamName">Team Name</label>
+      <input type="text" id="teamName" [(ngModel)]="player.teamName" name="teamName" required placeholder="Enter team name" />
+    </div>
+
+    <!-- Country/State Name -->
+    <div class="form-group">
+      <label for="countryStateName">Country/State Name</label>
+      <input type="text" id="countryStateName" [(ngModel)]="player.countryStateName" name="countryStateName" required placeholder="Enter country/state name" />
+    </div>
+
+    <!-- Description -->
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea id="description" [(ngModel)]="player.description" name="description" placeholder="Enter player description"></textarea>
+    </div>
+
+    <!-- Submit, Reset, and Back Buttons -->
+    <div class="form-buttons">
+      <button type="submit" class="btn-submit">Update Player</button>
+      <button type="button" (click)="resetForm()" class="btn-reset">Reset</button>
+      <button type="button" (click)="goBack()" class="btn-back">Back</button>
+    </div>
+  </form>
+</div>

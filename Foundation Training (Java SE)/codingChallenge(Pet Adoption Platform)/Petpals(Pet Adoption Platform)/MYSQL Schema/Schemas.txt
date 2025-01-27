@@ -1,0 +1,36 @@
+USE bakadb;
+-- pets table
+CREATE TABLE pets (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT,
+    breed VARCHAR(50),
+    pet_type VARCHAR(10)
+);
+Select * from pets;
+-- donations table
+CREATE TABLE donations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    donor_name VARCHAR(50),
+    amount DECIMAL(10, 2),
+    donation_type VARCHAR(20),
+    donation_date DATETIME,
+    item_type VARCHAR(50)
+);
+select * from donations;
+-- adoptions_events table
+CREATE TABLE adoption_events (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    event_name VARCHAR(50),
+    event_date DATETIME
+);
+
+-- participants table
+CREATE TABLE participants (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    event_id INT,
+    participant_name VARCHAR(50),
+    FOREIGN KEY (event_id) REFERENCES adoption_events(id)
+);
+
+
