@@ -1,4 +1,4 @@
-# Hexaware Early Intervention Program (EIP)
+# [Hexaware Early Intervention Program (EIP)](https://hexaware.com) *Aug 2024 - Dec 2024*
 
 This repository showcases the projects, assignments, and related documents completed during the Hexaware Early Intervention Program (EIP). EIP, an initiative by **Hexavarsity**, is a comprehensive training program designed to prepare **Graduate Engineer Trainees (GETs)** for industry readiness through domain-based and foundation-level learning.
 
@@ -48,8 +48,7 @@ Focused on industry-relevant skills through structured modules, coding challenge
 #### **Projects**  
 1. **Cricket Team Management System**  
    - **Backend**: REST APIs using Spring Boot for CRUD operations.  
-   - **Frontend**: Angular-based UI with features such as:
-     - JWT Authentication  
+   - **Frontend**: Angular-based UI with features such as: 
      - Form Validation  
      - Responsive Design  
 
@@ -70,7 +69,5 @@ Focused on industry-relevant skills through structured modules, coding challenge
 
 ## **Key Highlights**
 + Delivered production-grade solutions adhering to industry best practices.  
-+ Seamlessly integrated front-end and back-end systems.  
++ Efficiently integrated front-end and back-end systems.  
 + Actively participated in assessments, coding challenges, and technical discussions.  
-
- 
